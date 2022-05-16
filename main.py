@@ -9,7 +9,7 @@ import json
 app = Flask(__name__)
 cors = CORS(app)
 
-@app.route("/livros", methods=['GET', 'POST', 'DELETE'])
+'''@app.route("/livros", methods=['GET', 'POST', 'DELETE'])
 def livros():
     if request.method == 'GET':
         objetos = []
@@ -28,7 +28,7 @@ def livros():
         data = json.loads(data)
         id = data['id_livro']
         remover_livro(id)
-        return '200'
+        return '200''''
 
 
 @app.route("/livros/<id>", methods=['GET'])
